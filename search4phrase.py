@@ -2,7 +2,7 @@
 a = input("Введите символы, которые нужно отыскать: ")
 b = input("Введите фразу, в которой нужно найти символы: ")
           
-def search4letters(search_letters: str, input_phrase: str) -> set:
+def search4letters(search_letters: str = 'aeiou', input_phrase: str = "Don't Panic!") -> set:
     """ Output symbols input_phrase variable, contained in search_phrase variable"""
     found = set(search_letters).intersection(set(input_phrase))
     return found
